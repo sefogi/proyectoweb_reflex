@@ -1,16 +1,15 @@
 
 import reflex as rx 
+from .components.navbar import navbar
 
 class State(rx.State):
     pass
 
 
 def index() -> rx.Component:
-    
-    return rx.center(
-        rx.text("hola reflex", color="blue", text_align="center",font_size="2em")
+    return navbar()
         
-    )
+    
 
 
 
